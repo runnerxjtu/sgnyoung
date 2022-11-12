@@ -25,12 +25,7 @@
     <meta content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="./dstyle.css">
     <style>
-        @font-face {
-            font-family: 'biaoti';
-            src: url('font/biaoti.TTF');
-            font-weight:lighter;
-            font-style:normal;
-        }
+       
 
         @font-face {
             font-family: 'wenzhang';
@@ -393,135 +388,10 @@
 
 <body style="margin:0">
 
-    <main style="width: 100%; height: 95%; margin:0;font-family:biaoti; -webkit-font-smoothing: antialiased; overflow: hidden;">
-        <div id="headerl" class="headerl" style="height:100%;width:100%; background-image:url(./images/fenmian.jpg);background-size:cover;font-family:biaoti">
-            <div class="textWrapper">
-                <div class="wordContainer" style="height:100%;background-color:rgb(174 107 36/0.5)">
-                    <div class="wordl">
-                        <p>&ensp;</p>   <p>&ensp;</p>
-                        <p style="margin:6px;">&ensp;<br><br><span style="font-size:270px;font-weight:540;letter-spacing:30px;line-height:150px;font-family:biaoti">十<br>&ensp;年</span></p>
-                    </div>
-                </div>
-                <div class="wordContainer" style="position:absolute;left:33%;top:30%;font-size:100px;font-weight:320;letter-spacing:30px">
-                    <div class="wordl" style="font-family: biaoti">
-                        <p>看见产业兴旺</p>
-                    </div>
-                </div>
-                <div class="wordContainer" style="position:absolute;font-family :biaoti;left:35%;top:52%;font-size:50px;font-weight:220;letter-spacing:5px">
-                    <div class="wordl">
-                        <p>&ensp;&ensp;&ensp;&ensp;——数说陕甘宁振兴发展&nbsp;</p>
-                    </div>
-                </div>
-
-                <div class="wordContainer">
-                    <div class="wordl">
-                        <p>&nbsp;</p>
-                    </div>
-                </div>
-            </div>
+       <div id="headerl" class="headerl" style="width:100%;padding-bottom:50%;height:0; background-image:url(./images/head.svg);background-size:cover;">
+          
         </div>
-    </main>
-    <style>
-        /* First, we wrap every single word in a .wordContainer div */
-        /* We set that one to hide it's overflow */
-        .wordContainer {
-            overflow: hidden;
-        }
-
-        /* We define the "up" animation */
-        @keyframes up {
-            100% {
-                transform: translateY(0%);
-            }
-        }
-
-        /* Then, every single word gets animated up */
-        .wordl {
-            animation: up 0.8s;
-            animation-delay: 1.5s;
-            animation-fill-mode: forwards;
-            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-            transform: translateY(115%);
-        }
-
-        /* Delay for staggering effect */
-        .textWrapper .wordContainer:nth-child(2) .wordl {
-            animation-delay: 1.35s;
-        }
-
-        .textWrapper .wordContainer:nth-child(3) .wordl {
-            animation-delay: 1.5s;
-        }
-
-        .textWrapper .wordContainer:nth-child(4) .wordl {
-            animation-delay: 1.65s;
-        }
-
-        /* And that's it! */
-
-        /* PEN STYLING */
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-
-        main {
-            font-family: biaoti;
-        }
-
-        .headerl {
-            width: 100vw;
-            height: 130vh;
-            position: absolute;
-            display: flex;
-            justify-content: initial;
-            align-items: initial;
-        }
-
-        .textWrapper {
-            font-weight: 600;
-            font-size: 50px;
-            color: #fff;
-        }
-
-        .wordContainer {
-            float: left;
-        }
-
-        .textWrapper .wordContainer:nth-child(3) {
-            clear: both;
-        }
-
-        .wrappere {
-            height: 40vh;
-            /*This part is important for centering*/
-            display: grid;
-            place-items: center;
-        }
-
-        .typing-demo {
-            width: 18ch;
-            animation: typing 8s steps(32), blink .7s step-end infinite alternate;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid;
-            font-family: monospace;
-            font-size: 2em;
-        }
-
-        @keyframes typing {
-            from {
-                width: 0
-            }
-        }
-
-        @keyframes blink {
-            50% {
-                border-color: transparent
-            }
-        }
-    </style>
+  
     <nav id="cd-vertical-nav">
         <ul>
             <li>
@@ -884,11 +754,12 @@
                 <div style="background-color:;height:100%">
                     <div style="">
                         <div id="bottom1" style="background-color: white; float: left; width: 100%;height:60% ;border-radius: 18px 18px" class="bottom1">
-                            <div> 一棵树</div>
-                            <video width="320" height="240" muted autoplay="autoplay" style="position:relative;left:20%">
-                                <source src="images/treecopy.mp4" type="video/mp4">
-
-                            </video>
+                            <div style="height:;font-size:larger;text-align:center;letter-spacing:3px">
+                                <br>     
+                                一棵梧桐树长高<span style="color:crimson;font-size:49px">10000</span>mm
+                                <br />
+                            </div>
+                            <img src="images/tree1.gif" width="100%"> 
 
                         </div>
                         <style>
@@ -1002,13 +873,13 @@
             <button onclick="showimg()" style=" z-index:100;width:10%; padding-bottom:3%;height:0; border:8px; background-color: green;  font-size:30px; text-align: center; color: white; border-radius: 50px;position:relative;left:45%">生成</button>
         </div>
         <p>&ensp; </p>
-        <p style="text-align:center ;font-size:60px;color :white"><a href="#test" style="text-decoration:none;color:white;">﹀ </a></p>
+        <p style="text-align:center ;font-size:60px;color :white"><a href="#01test" style="text-decoration:none;color:white;">﹀ </a></p>
 
 
 
         <p>&ensp; </p>
         <p>&ensp; </p>
-        <img src="./images/3.png" id="test" style="display:none;width:100%;height:100%;">
+        <img src="./images/3.svg" id="01test" style="display:none;width:100%;">
 
         <script>
 
@@ -1112,7 +983,7 @@
             });</script>
     </div>
 
-    <div id="post1" style="background-image:url(images/biaoti0.png);height:0;padding-bottom:37.5% ;width :100%;background-size:cover;position:relative;bottom:220px"> </div>
+    <div id="post1" style="background-image:url(images/tital1.svg);height:0;padding-bottom:37.5% ;width :100%;background-size:cover;position:relative;bottom:220px"> </div>
 
     <div  style="margin: 0; background-color: rgb(179 116 4)">
         <div style="font-size: large;left: 10%;margin:0">
